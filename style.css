@@ -37,6 +37,7 @@ body{
 .title{
     font-size: 4rem;
     text-align: center;
+    z-index:10000;
 }
 .clock{
     height: 80%;
