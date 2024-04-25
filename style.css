@@ -37,6 +37,7 @@ body{
 .title{
     font-size: 4rem;
     text-align: center;
+    z-index:10000;
 }
 .clock{
     height: 80%;
@@ -106,13 +107,13 @@ body{
    bottom: 0;
    padding: 10px;
    text-align: center;
-   
-   .code-url{
+}
+.code-url{
     text-decoration: none;
     color: white;
     font-weight: 900;
-   }
 }
+
 @media (max-width:500px) {
     .clock{
         width: 90%;
