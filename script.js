@@ -19,6 +19,7 @@ function setTimePosition(){
     let secOnes = document.getElementsByClassName('sec-ones')[0];
     if(hour<=9){
         hourOnes.style.top = `-${hour * 39}px`;
+        hourTens.style.top = `0px`;
     }else{
         let hourValue = hour.toString().split('');
         let [hourTensDigit, hourOnesDigit] =  hourValue;
@@ -27,6 +28,7 @@ function setTimePosition(){
     }
     if(min<=9){
         minOnes.style.top = `-${min * 39}px`;
+        minTens.style.top = `0px`;
     }else{
         let minValue = min.toString().split('');
         let [minTensDigit, minOnesDigit] =  minValue;
@@ -36,6 +38,7 @@ function setTimePosition(){
 
     if(sec<=9){
         secOnes.style.top = `-${sec * 39}px`;
+        secTens.style.top = `0px`;
     }else{
         let secValue = sec.toString().split('');
         let [secTensDigit, secOnesDigit] =  secValue;

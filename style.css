@@ -48,8 +48,9 @@ body{
     margin-right: auto; 
     position: relative; 
     width: 80%;
-    height: 85vh;
+    height: 80%;
     display:grid;
+    overflow: hidden;
     justify-content: center;
     align-items: center;
     grid-template-columns: repeat(5, 70px);
@@ -80,11 +81,12 @@ body{
 }
 .window-blur{
    height: calc(50% -  28px);
+   z-index: 1;
    flex-shrink: 0;
    width: 100%;
    border-radius: 20px;
    background: rgba(255, 255, 255, 0.1); 
-   backdrop-filter: blur(20px); 
+   backdrop-filter: blur(1px); 
    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); /* Adjust shadow as needed */
 }
 
