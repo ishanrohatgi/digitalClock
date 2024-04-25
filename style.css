@@ -66,7 +66,13 @@ body{
     top:calc(25% - 20px);
 }
 .dots{
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+    line-height: 18px;
+    font-size: 1.8rem;
 }
 
 .window{
@@ -81,14 +87,16 @@ body{
 
 }
 .window-blur{
-   height: calc(50% -  28px);
+   height: calc(50% -  35px);
+   
    z-index: 1;
    flex-shrink: 0;
    width: 100%;
    border-radius: 20px;
+   outline: 2px solid white;
    background: rgba(255, 255, 255, 0.1); 
    backdrop-filter: blur(1px); 
-   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); /* Adjust shadow as needed */
+   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); 
 }
 
 .dots{
@@ -116,15 +124,21 @@ body{
     z-index: 2;
 }
 
+.digit{
+    font-size: 2.5rem;
+}
+
 @media (max-width:500px) {
     .clock{
         width: 90%;
+        padding-inline: 15px;
     }
 }
 
 @media (max-width:350px){
     .clock{
         width: 100%;
+        padding-inline: 15px;
     }
 }
 
